@@ -1,0 +1,31 @@
+@keyframes backgroundChange {
+  0% {
+    background-color: #3b82f6; /* Tailwind's bg-blue-500 */
+  }
+  50% {
+    background-color: #60a5fa; /* Lighter shade */
+  }
+  100% {
+    background-color: #3b82f6; /* Back to original color */
+  }
+}
+
+.animate-background {
+  animation: backgroundChange 5s ease-in-out infinite; /* Adjust the duration for subtlety */
+}
+
+@keyframes color-shift {
+  0% {
+    background-color: #1F3B83; /* Initial color */
+  }
+  50% {
+    background-color: #2A4A9C; /* Mid color */
+  }
+  100% {
+    background-color: #1F3B83; /* End color (back to initial) */
+  }
+}
+
+.animate-color-shift {
+  animation: color-shift 3s infinite ease-in-out; /* Adjust duration as needed */
+}
